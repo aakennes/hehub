@@ -121,7 +121,7 @@ CkksPt simd_encode(const std::vector<double> &data,
  * @return CkksPt
  */
 inline CkksPt encode(const cc_double datum, const CkksParams &pt_params) {
-    std::vector datum_rep(pt_params.dimension / 2, datum);
+    std::vector<cc_double> datum_rep(pt_params.dimension / 2, datum);
     return simd_encode(datum_rep, pt_params);
 }
 
@@ -134,7 +134,7 @@ inline CkksPt encode(const cc_double datum, const CkksParams &pt_params) {
  * @return CkksPt
  */
 inline CkksPt encode(const double datum, const CkksParams &pt_params) {
-    std::vector datum_rep(pt_params.dimension / 2, datum);
+    std::vector<double> datum_rep(pt_params.dimension / 2, datum);
     return simd_encode(datum_rep, pt_params);
 }
 

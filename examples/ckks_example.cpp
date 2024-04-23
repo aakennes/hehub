@@ -7,7 +7,7 @@ using namespace hehub;
 
 int main() {
     int precision_bits = 30;
-    auto params = ckks::create_params(4096, precision_bits);
+    auto params = ckks::create_params(8192, precision_bits);
     CkksSk sk(params);
     auto relin_key = get_relin_key(sk, params.additional_mod);
 

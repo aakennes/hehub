@@ -28,6 +28,23 @@ To install the library, run the following command:
 sudo cmake --install build
 ```
 
+Before the test, you must put your test.cpp into hehub/tests
+
+compiling command:
+
+```bash
+cd build
+make
+```
+
+test 
+
+```bash
+./examples/ckks_example
+```
+
+Change the ckks_example with your testname
+
 ## Usage
 
 The usage of homomorphic encryption with HEhub is very simple. Below is an example computing the Basel series with the CKKS scheme.
