@@ -37,7 +37,7 @@ cd build
 make
 ```
 
-test 
+Test command:
 
 ```bash
 ./examples/ckks_example
